@@ -75,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // );
 
     return new Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.amberAccent,
       body:SafeArea(
         child: (
             Center(
@@ -89,20 +89,65 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Image(
                       image: AssetImage("images/roaiat.png"),
                     ),
-                    
+
                   ),
-                  Container(
-                    height: 40.0,
-                    width: double.infinity,
+                  Card(
+
                     margin:EdgeInsets.all(20.0),
-                    color: Colors.amber,
+                    color: Colors.white,
+                    child: Padding(
+
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: <Widget>[
+                          Icon(
+                            Icons.person,
+                            color: Colors.black45,
+
+                          ),
+                          SizedBox(
+                              width: 10.0,
+                          ),
+                          Text(
+
+                            "Enter your user name",
+                            style: TextStyle(
+                                color:Colors.black45
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
                   ),
-                  Container(
-                    height: 40.0,
-                    width: double.infinity,
+                  Card(
+
                     margin:EdgeInsets.all(20.0),
-                    color: Colors.amber,
-                  )
+                    color: Colors.white,
+
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: <Widget>[
+                          Icon(
+                            Icons.lock,
+                            color: Colors.black45,
+
+                          ),
+                          SizedBox(
+                            width: 10.0,
+                          ),
+                          Text(
+
+                            "Enter your passowrd",
+                            style: TextStyle(
+                                color:Colors.black45
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+
                 ],
               ),
 
